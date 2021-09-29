@@ -5,34 +5,45 @@
         <meta charset="utf-8"> 
         <title>test 1</title>
         <link rel="stylesheet" href="Style/style.css">
-        <style>
-        </style>
-      <script defer src="Js/javapage1.js">
-       </script>
+        <meta name="viewport" content="width=320, initial-scale=1">
+    <style>
+      body, html {
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        position:relative;
+        top:5px;
+      }
+      html {
+        font-size: 62.5%;
+      }
+
+
+      body {
+        margin: 0;
+        font-family: 'Lato', 'sans-serif';
+        background-color: #f7f7f7; 
+      }
+    </style>
+     <script defer src="../GitHub/Js/javapage1.js">
+      </script>
         
     </head> 
     
     <body>
-      <header>
-        <nav id="navigatio">
-
-            <a href="#accueil" class="liensNav" onclick="toggleNav()">Accueil</a>
-            <a href="#valeurs" class="liensNav" onclick="toggleNav()">Nos Valeurs</a>
-            <a href="#tarifs" class="liensNav" onclick="toggleNav()">Nos Tarifs</a>
-            <a href="#contact" class="liensNav" onclick="toggleNav()">Contact</a>
-            <a class="icon" id="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a>
-        </nav>
-        </header>
-      <div id="navigator">
+      <div class="navigator">
             <input type="text" placeholder="Recherche" id="recherche">
-          
-            <button onclick="menuOpen()">
+        <button onclick="menuOpen()" class="right" class="menu" id="menuIdButtonOpen">
               Menu
             </button>
-            <p id="menuid">
-            <a href="Index/pythagore.html">Pythagore</a>
-            </p>
-          </div>
+        <div class="menuOuvert">
+          <p id="menuId" class="right">  
+             
+        </p>
+         </div>
+         </div>
       
       <div class="page">
         <h1>Ce site permettra de m'entrainer et de vous apprendre ce que je sais sur les languages HTML et CSS</h1>
@@ -42,8 +53,8 @@
         </ul>
         <dl>
             <dt><h2 id="html">HTML</h2></dt>
-            <dd> Pour le bien de l'explication les commandes seront faussés c'est a dire que des points seront placés juste après les <, donc faites attention si vous copier coller.       </dd>
-            <dd>Si vous avez tous compris, alors dans ces cas là allons-y</dd>
+            <dd> Pour le bien de l'explication les commandes seront fauss??s c'est a dire que des points seront plac??s juste apr?$B!/(Bs les <, donc faites attention si vous copier coller.       </dd>
+            <dd>Si vous avez tous compris, alors dans ces cas l?? allons-y</dd>
         </dl>
         <p>Pour commencer toute page web il faut ecrire ceci:</br>
         <.DOCTYPE html></br>
@@ -73,24 +84,24 @@ liste balise utilisable pour commancer:</p>
         <p> Par exemple vous pouvez utilisez <.p> et pour la fermer <./p>. Ces commandes permettent d'ecrire dans un paragraphe. Entre ces deux symboles ecrivez du texte. Par exemple: </br><.p>Ceci est un paragraphe<./p></br><.p>Ceci est un autre paragraphe<./p> </p>
         <h3 id="/br"><./br></h3>
         </p>
-        <p>En ecrivant vous ne pouvez pas faire de retours a la ligne, donc <./br> est la solution. Il s'utilise partout et où vous voulez.</p>
+        <p>En ecrivant vous ne pouvez pas faire de retours a la ligne, donc <./br> est la solution. Il s'utilise partout et o?? vous voulez.</p>
         <h3 id="a">
             <.A>
         </h3>
-        <p>La balise a permet d´introduire un autre site où d´ammener sur un endroit de la page. Il s´utilise comme ceci:</br> <.a href="url.com"> </br> ou alors pour amener sur un endroit de la page il faut qu´a un endroit autour d'un mot vous utilisez les balise h1-h2-h3...h6 ou la balise <.div>. Vous devrez alors faire ceci:</br><.h3 id="test">on vous fera voyager ici<./h3></br><.a href="#test">ceci vous fera voyager><./a></p>
+        <p>La balise a permet d?$B!-(Bintroduire un autre site o?? d?$B!-(Bammener sur un endroit de la page. Il s?$B!-(Butilise comme ceci:</br> <.a href="url.com"> </br> ou alors pour amener sur un endroit de la page il faut qu?$B!-(Ba un endroit autour d'un mot vous utilisez les balise h1-h2-h3...h6 ou la balise <.div>. Vous devrez alors faire ceci:</br><.h3 id="test">on vous fera voyager ici<./h3></br><.a href="#test">ceci vous fera voyager><./a></p>
         <h3 id="dl">
             <.dl>
         </h3>
-        <p>DL permet de creer une sorte de liste mais sans numerotation, ni point a chaque retour a la linge. Il s´utilise ainsi:</br><.dl></br><.dt>Titre de la liste<./dt></br><.dd>element de la liste<./dd></.dl></br><.dd>et un deuxieme<./dd></br><./dl>
+        <p>DL permet de creer une sorte de liste mais sans numerotation, ni point a chaque retour a la linge. Il s?$B!-(Butilise ainsi:</br><.dl></br><.dt>Titre de la liste<./dt></br><.dd>element de la liste<./dd></.dl></br><.dd>et un deuxieme<./dd></br><./dl>
         <dl>
             <dt><h2 id="css">CSS </h2> </dt>
             <dd>Le CSS permet de modifier l'apparence d'une page par exemple la couleur du texte.</dd>
         </dl>
         </p>
         <p>Le CSS se presente sous cette forme</p>
-        <p>Ce qu´on veut changer par exemple tous la couleur d´un paragraphe alors on utilise:</br>p{</br>color:red;</br>}</p>
+        <p>Ce qu?$B!-(Bon veut changer par exemple tous la couleur d?$B!-(Bun paragraphe alors on utilise:</br>p{</br>color:red;</br>}</p>
           
-        <p>le P correspont a ce qu'on veut modifier, ausi dans une balise on peut ecrire une "class" au debut par exemple <./p class="classe1"> par la suite en CSS, vous devrez remplacer le P par .classe1 par exemple. Il existe d´autre moyenne pour modifier le texte comme:</p>
+        <p>le P correspont a ce qu'on veut modifier, ausi dans une balise on peut ecrire une "class" au debut par exemple <./p class="classe1"> par la suite en CSS, vous devrez remplacer le P par .classe1 par exemple. Il existe d?$B!-(Bautre moyenne pour modifier le texte comme:</p>
         <ul>
             <li>front</li>
             <li>color</li>
@@ -104,7 +115,7 @@ liste balise utilisable pour commancer:</p>
             <li>right</li>
        </ul>
        <p>Ce sont les principales variables utilisable en CSS, pour modifier le texte.</p>
-     </div>       
+          </div>   
    
     </body> 
             

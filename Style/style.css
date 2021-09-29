@@ -1,39 +1,21 @@
-{
-  position:absolute;
-  left:180px;
+.navigator{
+  position: fixed;
+  top:0;
+  border: solid 3px;
+  background-color: #00c4bf;
+  width:100%;
+  font-size:20px;
 }
 
-{
-position:fixed;
-  color:white;
-  top:0px;
-  left:-2px;
-  width:170px;
-  height:1300px;
-  background-color:black;
-  z-index:9999;
-  font-size:25px;
-  padding-left:10px;
-  line-height:50px;
-  background:linear-gradient(180deg,black,white);
-  display:flex;
-  flex-direction:column;
-}
 
 h1{
   text-decoration:underline;
   font:Arial bold;
-  font-size:60px;
-}
-
-body{
-  font-style:Arial;
   font-size:35px;
-
 }
 
 h2{
-  font-size:50px;
+  font-size:30px;
   font-weight:bold;
 }
 .animation{
@@ -45,10 +27,13 @@ width:20px;
 height:20px;
 }
 
-.page{
-  position:relative;
-  left:180px;
+.right{
+  position: absolute;
+  right: 5px;
 }
+
+
+/* Navigation */
 
 #navigation {
     position: fixed;

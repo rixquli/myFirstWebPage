@@ -16,6 +16,53 @@
     <!--<script defer src="script.js"></script>-->
   </head>
   <body>
-    
+    <script>
+      var hexa = [];
+      var hexacomptage = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]; 
+      var hexafinal = [];
+      
+      
+      for(var i = 0;i < 16; i++) {
+        hexa[i] = "00000" + hexacomptage[i];
+        //if(hexa[i] = "00000F") {
+       // var un = 1;  
+        //hexa[i+1] = "0000" + un +"0"
+        //i++;
+       // }
+      }
+      for(var i = 0;i < 16; i++) {
+        hexa[i] = "00000" + hexacomptage[i];
+      }
+      for(var i = 16;i < 31; i++) {
+        hexa[i] = "0000" + hexacomptage[i-15] + "0";
+      }
+      for(var i = 32;i < 47; i++) {
+        hexa[i] = "000" + hexacomptage[i-31] + "00";
+      }
+for(var i = 48;i < 63; i++) {
+        hexa[i] = "00" + hexacomptage[i-47] + "000";
+      }
+for(var i = 64;i < 79; i++) {
+        hexa[i] = "0" + hexacomptage[i-63] + "0000";
+      }
+for(var i = 80;i < 95; i++) {
+        hexa[i] = hexacomptage[i-79] + "00000";
+      }
+      
+      var B = 0;
+      
+      for(var A = 0; A < 16; i++) {
+        if(A > 14) {
+          
+        }
+        hexafinal[A] = hexa[A];
+        
+      }
+        
+      alert(hexa);
+    </script>
+    <div id="replace">
+       g 
+    </div>
   </body>
 </html>

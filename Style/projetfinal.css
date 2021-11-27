@@ -1,0 +1,103 @@
+body {
+  background: teal;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.base {
+  background-color: black;
+  position: relative;
+  height: 60px;
+  width: auto;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  color: red;
+  margin: 0px 9px 3px 3px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.tenu {
+  border: solid 5px #ccc;
+}
+
+.case {
+  display: inline-block;
+  height: 50vh;
+  width: 31vw;
+  border: solid 3px black;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+.case2 {
+  display: inline-block;
+  height: 20px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: -9px;
+  padding: 0;
+  background: #fff;
+  border: solid 2px red;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+.container {
+  display: inline-block;
+  margin: auto;
+  height: 50vh;
+  width: 31vw;
+  overflow-y: scroll;
+  background: #f4f4f4;
+  border: solid 3px black;
+}
+
+.buttonRight {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+#traduction {
+  display: inline-block;
+  background-color: darkblue;
+  width: 31vw;
+  height: 50vh;
+  border: solid 3px black;
+  color: red;
+}
+
+.secondPart {
+  display: inline-flex;
+  height: 50vh;
+  width: 95vw;
+}
+
+.P {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.P textarea {
+  width: 80%;
+}
+
+#html-box{
+  display:none;
+}
+
+#html-box.active{
+  display:block;
+  height:100%;
+  background-color:red;
+}

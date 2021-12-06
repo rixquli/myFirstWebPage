@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/Js/projetfinal.js"></script>
+    <script defer src="../Js/projetfinal2.js"></script>
     <link rel="stylesheet" href="../Style/projetfinal.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
+    <script src="../Sortable.js"></script>
   </head>
   <body>
+    <!-- <input
+      type="image"
+      src="../ressource/126472.png"
+      width="100"
+      height="48"
+      alt="text"
+    /> -->
+
     <!--Il faut 3 parties //Première, partie supérieur avec 3 choix: HTML, CSS et
     JS 
     Duexième, en dessous avec trois sous partie, avec les cases a faire
@@ -21,15 +30,22 @@
     Troisieme, en dessous avec l'apercu
   -->
     <div class="choice">
-      <a id="html-link" href="#html-box" role="button" aria-pressed="false">
-HTML
-</a>
+      <button
+        id="html-link"
+        href="#html-box"
+        role="button"
+        aria-pressed="false"
+      >
+        HTML
+      </button>
       <input type="button" value="CSS" id="CSS" />
       <input type="button" value="JS" id="JS" />
     </div>
     <div class="secondPart">
       <div class="container">
-        <div class="base P" draggable="true">P<br><textarea placeholder="Paragraphe ici"></textarea></div>
+        <div class="base P" draggable="true">
+          P<br /><textarea placeholder="Paragraphe ici"></textarea>
+        </div>
         <div class="base BR" draggable="true">BR</div>
         <div class="base A" draggable="true">A</div>
         <div class="base INPUT" draggable="true">INPUT</div>
@@ -42,11 +58,18 @@ HTML
       <div class="case"></div>
       <div id="traduction"></div>
     </div>
-    
+
     <div id="inclusion">
       <iframe src="" frameborder="0"></iframe>
-      <div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
-<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code">&lt;!DOCTYPE html&gt;
+      <div
+        id="html-box"
+        class="code-wrap code-box box"
+        role="region"
+        aria-label="HTML"
+      >
+        <pre
+          tabindex="0"
+        ><code data-lang="htmlmixed" id="actual-html-code">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;fr&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -60,7 +83,8 @@ HTML
     &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-</div>
+      </div>
+
       <!--iframe
         allowfullscreen="true"
         allowpaymentrequest="true"

@@ -40,8 +40,6 @@ function dragLeave() {
 
 function dragOver2(e) {
   e.preventDefault();
-
-  box.removeEventListener("drop", dragDrop);
 }
 
 function dragLeave2() {
@@ -85,10 +83,11 @@ function dragDrop2() {
   box.addEventListener("drop", dragDrop);
 
   codeHTML(this.parentElement.parentElement);
+  envent.stopPropagation
 }
 
 function dragDrop() {
-  this.innerHTML += `<div><div class="case2"></div><div class="base">${baseContain.innerHTML}<br><input type="button" value="X" class="buttonRight"/></div></div>`;
+  this.innerHTML += `<div><div class="case2"></div><div class="base">${baseContain.innerHTML}<br><input type="button" value="X" class="buttonRight"/><input type="button" src="../resource/126472.png" class="parametre"/></div></div>`;
   if (baseContain.textContent == "DIV") {
     this.innerHTML += `<div><div class="case2"></div><div class="base">/DIV<br></div>`;
   }
@@ -119,7 +118,7 @@ function codeHTML(a) {
     var children = a.childNodes;
     var codeHtml = "";
     for(var i = 0; i < children.length; i++) {
-      var codeHtml += children[i].textContent;
+      var codeHtml =+ children[i].textContent;
     }
     alert(codeHtml);
 }
@@ -131,3 +130,8 @@ function codeHTML(a) {
 //$(function () {
 //  $("#inclusion").load("https://codepen.io/Ziratsu/pen/vvPYpp?editors=0110");
 //});
+
+var activeTest = document.querySelector("#activeTest");
+function activateTest() {
+ activeTest.classList.toggle("activate");
+};
